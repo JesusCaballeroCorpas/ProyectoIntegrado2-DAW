@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="es">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Presentación QuiniJuego</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Jesús Caballero Corpas">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css" id="theme">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+		
+		<style>
+			td.fragment {
+				width:50%;
+				border-bottom: none !important;
+			}
+		</style>
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+					<h1>QuiniJuego</h1>
+					<h3>Proyecto Integrado Desarrollo de Aplicaciones Web<br> I.E.S. Campanillas</h3>
+					<p>
+						<small>Hecho por Jesús Caballero Corpas / <a href="https://github.com/JesusCaballeroCorpas">GitHub</a></small>
+					</p>
+				</section>
+
+				<section>
+					<h2>Recursos utilizados</h2>
+					<table>
+						<tbody>
+							<tr>
+								<td class="fragment">- PHP</td>
+								<td class="fragment">- Twig</td>
+							</tr>
+							<tr>
+								<td class="fragment">- CSS3(media queries, fontface, animations...)</td>
+								<td class="fragment">- HTML5</td>
+							</tr>
+							<tr>
+								<td class="fragment">- Videos e imágenes</td>
+								<td class="fragment">- SVG</td>
+							</tr>
+							<tr>
+								<td class="fragment">- javascript</td>
+								<td class="fragment">- mysql</td>
+							</tr>
+							<tr>
+								<td class="fragment">- jQuery</td>
+								<td class="fragment">- jQuery AJAX</td>
+							</tr>
+							<tr>
+								<td class="fragment">- jQuery DateTimePicker</td>
+								<td class="fragment">- jQuery Validate</td>
+							</tr>
+							<tr>
+								<td class="fragment">- Bootstrap</td>
+								<td class="fragment">- Font Awesome</td>
+							</tr>
+						</tbody>
+					</table>
+				</section>
+
+				<section>
+					<h2>Modelo de datos</h2>
+					<p>
+						<img width="860" height="541" data-src="img/db.png">
+					</p>
+				</section>
+				
+				<section>
+					<h2>Página de inicio</h2>
+					<p>
+						<img width="800" height="499" data-src="img/index.png">
+					</p>
+				</section>
+
+				<section>
+					<h2>Login de Usuario</h2>
+					<p>
+						<img width="800" height="452" data-src="img/login.png">
+					</p>
+				</section>
+				
+				<section>
+					<h2>Registro de Usuario</h2>
+					<p>
+						<img width="800" height="452" data-src="img/registeruser.png">
+					</p>
+				</section>
+				
+				<section>
+					<h2>Reglas</h2>
+					<p>
+						<img width="700" height="538" data-src="img/reglas.png">
+					</p>
+				</section>
+				
+				<section>
+					<h2>Apostar</h2>
+					<p>
+						<img width="800" height="452" data-src="img/apostar.png">
+					</p>
+				</section>
+				
+				<section>
+					<h2>Puntuaciones</h2>
+					<p>
+						<img width="800" height="452" data-src="img/puntuaciones.png">
+					</p>
+				</section>
+				
+				<section>
+					<h2>Clasificación de la Jornada</h2>
+					<p>
+						<img width="800" height="452" data-src="img/clasificacionjornada.png">
+					</p>
+				</section>
+				
+				<section>
+					<h2>Clasificación General</h2>
+					<p>
+						<img width="800" height="452" data-src="img/clasificaciongeneral.png">
+					</p>
+				</section>
+				
+				<section>
+					<h2>Pagina de Administración</h2>
+					<p>
+						<img width="800" height="548" data-src="img/admin.png">
+					</p>
+				</section>
+
+				<section>
+					<h1>QuiniJuego</h1>
+					<p>
+						<img width="240" height="240" data-src="img/logo.png">
+					</p>
+					<p>
+						<small>Hecho por Jesús Caballero Corpas / <a href="https://github.com/JesusCaballeroCorpas">GitHub</a></small>
+					</p>
+				</section>
+				
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
